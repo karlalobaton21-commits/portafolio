@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(34, 23, 27)),
+    url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    margin: 0;
+    padding: 0;
+}
+
+.container-header{
+    background: rgba(0, 0, 0, 0.719);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #853131;
+    text-decoration: none;
+}
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a{
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover{
+    color: #500e0e;
+}
+
+
+.contacto{
+    margin-top: 100px;
+}
+h1{
+    color: #853131;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: "work Sans", sans-serif;
+}
+p{
+    color: #dac6c6;
+    text-align: center;
+    font-family: "work Sans", sans-serif;  
+    padding: 10px 50px;
+}
+.contenedor-contac{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.contenedor-contac form input,
+.contenedor-contac form textarea {
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 12px; 
+    font-size: 16px;
+}
+
+
+.contenedor-contac form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #000000;
+    gap: 10px; 
+}
+.contenedor-contacbutton:hover{
+    background: #853434;
+    transition: background 0.3s ease;
+
+}
+
+.contenedor-contac button{
+    background:#692d2d ;
+    color: #fff;
+    padding: 12px 20px;   
+    border: none;        
+    border-radius: 10px;   
+    font-size: 16px;      
+    cursor: pointer;     
+    transition: 0.3s ease;
+
+}
+
+.mapa {
+    
+    min-width: 350px;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: #000000;
+}
+

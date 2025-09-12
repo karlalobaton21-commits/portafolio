@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(34, 23, 27)),
+    url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    margin: 0;
+    padding: 0;
+}
+
+.container-header{
+    background: rgba(0, 0, 0, 0.719);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #853131;
+    text-decoration: none;
+}
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a{
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover{
+    color: #500e0e;
+}
+
+/* inicio*/
+
+h1{
+    color: #853131;
+    text-align: center;
+    padding: 110px 20px;
+    font-family: "work Sans", sans-serif;
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+    
+}
+
+.ecard{
+    min-width: 300px;
+    max-width: 400px;
+    background: #000000a1;
+    border-radius: 15px;
+    width: 300px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    transition: transform 0.3s ease;
+}
+.ecard h2{
+    color: #833939;
+}
+.ecard p{
+    color: rgb(170, 137, 137);
+}
+
+
+img{
+    align-self: center;
+    padding: 15px 15px 10px 1px;
+    min-width: 80px;
+    max-width: 90%;
+    border-radius: 30px;
+
+}
+.links a {
+    color: #500e0e;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 15px 0;;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer.redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color:#fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px;
+    font-size: 20px;
+    transition: 5s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 60px;
+    background-color: #420d0d;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
