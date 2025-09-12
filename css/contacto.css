@@ -125,3 +125,8 @@ p{
     box-shadow: #000000;
 }
 
+.mapa iframe {
+    width: 100%;
+    height: 350px; /* o el tamaño que quieras */
+    border: none;
+    border-radius: 10px; }
