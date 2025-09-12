@@ -9,6 +9,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
 
 *{
@@ -86,6 +87,7 @@ section{
 }
 
 .skills .fila{
+    
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
