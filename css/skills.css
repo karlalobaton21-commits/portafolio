@@ -81,6 +81,7 @@ html{
 
 section{
     margin-top: 80px;
+    height: 100vh;
 }
 
 .skills{
@@ -208,6 +209,10 @@ footer .redes a:hover{
         right: 20px;
         top: 20px;
         z-index: 300;
+    }
+
+    section{
+        height: 150vh;
     }
     /*menu oculto*/
     .container-header header .nav ul{
