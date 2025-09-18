@@ -75,6 +75,7 @@ html{
 }
 section{
     margin-top: 80px;
+    height: 100vh;
 }
 .curriculum{
     color: #fff;
