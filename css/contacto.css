@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(34, 23, 27)),
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(39, 32, 49)),
     url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -14,9 +14,21 @@ body{
 }
 *{
     box-sizing: border-box;
-    font-family: "Work Sans";
+    font-family: "Word Sans";
     margin: 0;
     padding: 0;
+}
+
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color:  #7b58da;
+    margin-left: auto;
+    border-radius: 20px;
 }
 
 .container-header{
@@ -38,9 +50,11 @@ body{
 .container-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #853131;
+    color: #5b2bdf ;
     text-decoration: none;
 }
+
+
 .container-header header ul{
     display: flex;
     list-style: none;
@@ -54,7 +68,7 @@ body{
     text-decoration: none;
 }
 .container-header header nav ul li a:hover{
-    color: #500e0e;
+    color: #5b2bdf ;
 }
 
 
@@ -63,16 +77,16 @@ body{
     flex: 1;
     
 }
+
 h1{
-    color: #853131;
+    color: #5b2bdf;
     text-align: center;
     padding: 10px 20px;
-    font-family: "work Sans", sans-serif;
+
 }
 p{
     color: #dac6c6;
-    text-align: center;
-    font-family: "work Sans", sans-serif;  
+    text-align: center; 
     padding: 10px 50px;
 }
 .contenedor-contac{
@@ -83,15 +97,13 @@ p{
     gap: 30px;
     flex-wrap: wrap;
 }
-.contenedor-contac form input,
-.contenedor-contac form textarea {
+.contenedor-contac form input{
     height: 40px;
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 12px; 
     font-size: 16px;
 }
-
 
 .contenedor-contac form{
     display: flex;
@@ -103,14 +115,15 @@ p{
     box-shadow: #000000;
     gap: 10px; 
 }
+
 .contenedor-contacbutton:hover{
-    background: #853434;
+    background: #451abb;
     transition: background 0.3s ease;
 
 }
 
 .contenedor-contac button{
-    background:#692d2d ;
+    background: #6849be ;
     color: #fff;
     padding: 12px 20px;   
     border: none;        
@@ -170,8 +183,53 @@ footer .redes a{
     transition: all 0.3s ease;
 }
 
+
+
 footer .redes a:hover{
-    background: #500e0e;
-    border-color: #500e0e;
+    background: #5b2bdf;
+    border-color: #5b2bdf;
     transform: scale(1.1);
+}
+@media(max-width: 768px) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color:  #7b58da;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 300;
+    }
+    /*menu oculto*/
+    .container-header header .nav ul{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(64, 60, 75, 0.911);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(15, 5, 43, 0.911);
+        z-index: 250;
+    }
+    /*mostrar menu al activar*/
+    #menu-toggle:checked ~ .nav ul {
+        display: flex;
+    }
+    .container-header header .nav ul li {
+        margin: 5px 0;
+    }
+    .container-header header .nav ul li a{
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-align: left;
+    }
+
 }

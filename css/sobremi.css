@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(34, 23, 27)),
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(39, 32, 49)),
     url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -13,9 +13,21 @@ body{
 }
 *{
     box-sizing: border-box;
-    font-family: "Work Sans";
+    font-family: "Word Sans";
     margin: 0;
     padding: 0;
+}
+
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color:  #451abb;
+    margin-left: auto;
+    border-radius: 20px;
 }
 
 .container-header{
@@ -37,7 +49,7 @@ body{
 .container-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #853131;
+    color:  #5b2bdf ;
     text-decoration: none;
 }
 .container-header header ul{
@@ -53,19 +65,9 @@ body{
     text-decoration: none;
 }
 .container-header header nav ul li a:hover{
-    color: #500e0e;
+    color:  #451abb;
 }
-#menu-toggle{
-    display: none;
-}
-.menu-icon{
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #8f3434;
-    margin-left: auto;
-    border-radius: 20px;
-}
+
 .sobremi {
     background-size: cover;
     background-position: center;
@@ -82,7 +84,6 @@ body{
 }
 .sobremi h2{
     font-size: 48px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding: 20px 0;
 }
@@ -94,7 +95,7 @@ body{
 }
 
 .sobremi .container-section p span{
-    color: #771e1e;
+    color:   #5539a1;
     font-weight: bold;
 }
 
@@ -122,7 +123,7 @@ body{
 
 .sobremi .fila .col ul strong{
     display: inline-block;
-    color: #8f3434;
+    color:  #5a2fd1;
     width: 120px;
     text-align: right;
 }
@@ -135,7 +136,7 @@ body{
 .sobremi .fila .col .container-interes .interes{
     width: 100px;
     height: 100px;
-    background-color: rgb(56, 28, 28);
+    background-color: #6953a5;
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
@@ -146,7 +147,7 @@ body{
 }
 
 .sobremi .fila .col .container-interes .interes:hover{
-    background-color: #500e0e;
+    background-color:  #451abb;
 }
 
 
@@ -177,8 +178,8 @@ footer .redes a{
 }
 
 footer .redes a:hover{
-    background: #500e0e;
-    border-color: #500e0e;
+    background: ;
+    border-color: #451abb;
     transform: scale(1.1);
 }
 
@@ -190,7 +191,7 @@ footer .redes a:hover{
         display: block;
         font-size: 28px;
         cursor: pointer;
-        color: #500e0e;
+        color: #7b58da;
         position: absolute;
         right: 20px;
         top: 20px;
@@ -200,14 +201,14 @@ footer .redes a:hover{
     .container-header header .nav ul{
         display: none;
         flex-direction: column;
-        background-color: rgba(58, 55, 55, 0.5);
+        background-color: rgba(64, 60, 75, 0.911);
         position: absolute;
         top: 60px;
         right: 20px;
         width: 200px;
         padding: 10px 0;
         border-radius: 6px;
-        box-shadow: 0 4px 10px rgba(100, 97, 97, 0.4);
+        box-shadow: 0 4px 10px rgba(15, 5, 43, 0.911);
         z-index: 250;
     }
     /*mostrar menu al activar*/
@@ -217,4 +218,78 @@ footer .redes a:hover{
     .container-header header .nav ul li {
         margin: 5px 0;
     }
+    .container-header header .nav ul li a{
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-align: left;
+    }
+
+}
+@media (max-width: 768px) {
+    /*RESPONSIVE*/
+    .container-header header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-header header ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .container-header header nav ul li{
+        margin: 10px 0;
+    }
+    .sobremi {
+        padding: 80px 15px;
+    }
+    .sobremi h2 {
+        font-size: 36px;
+    }
+    .sobremi .fila{
+        flex-direction: column;
+    }
+    .sobremi .fila .col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sobremi .fila .col h3 {
+        font-size: 24px;
+    }
+    .sobremi .fila .col ul strong{
+        width: auto;
+        text-align: left;
+    }
+    .sobremi .fila .col .container-interes {
+        justify-content: center;
+    }
+    .sobremi .fila .col .container-interes .interes {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+    footer .redes a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-header header .logo a {
+        font-size: 28px;
+    }
+    .sobremi h2 {
+        font-size: 28px;
+    }
+    .sobremi .container-section p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .sobremi .fila .col h3 {
+        font-size: 20px;
+    }
+
 }

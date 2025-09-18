@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(34, 23, 27)),
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(39, 32, 49)),
     url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -12,9 +12,21 @@ body{
 }
 *{
     box-sizing: border-box;
-    font-family: "Work Sans";
+    font-family: "Word Sans";
     margin: 0;
     padding: 0;
+}
+
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color:   #7b58da;
+    margin-left: auto;
+    border-radius: 20px;
 }
 
 .container-header{
@@ -36,7 +48,7 @@ body{
 .container-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #853131;
+    color: #5b2bdf ;
     text-decoration: none;
 }
 .container-header header ul{
@@ -51,9 +63,11 @@ body{
     transition: .5s;
     text-decoration: none;
 }
+
 .container-header header nav ul li a:hover{
-    color: #500e0e;
+    color:  #451abb;
 }
+
 
 
 /*SECCION INICIO*/
@@ -74,10 +88,11 @@ body{
     text-align: center;
     border-radius: 40px;
 
+
 }
 .container-banner .container-img img {
     margin-top: 40px;
-    border: 10px solid #5a1414;
+    border: 10px solid  #4e2fa8 ;
     display: block;
     width: 80%;
     margin: auto;
@@ -112,8 +127,8 @@ body{
     transition: 0.5s;
 }
 .container-banner .redes a.hover{
-    background: #420d0d;
-    border-color: #290b0b;
+    background:  #451abb;
+    border-color: #1c092e;
     transform: scale(1.1);
 }
 footer{
@@ -143,7 +158,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 60px;
-    background-color: #420d0d;
+    background-color:  #451abb;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -153,7 +168,51 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
 /*RESPONSIVE*/
+@media(max-width: 768px) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #7b58da;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 300;
+    }
+    /*menu oculto*/
+    .container-header header .nav ul{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(64, 60, 75, 0.911);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(15, 5, 43, 0.911);
+        z-index: 250;
+    }
+    /*mostrar menu al activar*/
+    #menu-toggle:checked ~ .nav ul {
+        display: flex;
+    }
+    .container-header header .nav ul li {
+        margin: 5px 0;
+    }
+    .container-header header .nav ul li a{
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-align: left;
+    }
+
+}
 @media(max-width: 768px){
     /*HEADER*/
     .conteiner-header header{
@@ -191,6 +250,7 @@ footer .arriba{
         margin:10px;
     }
 }
+
 
 @media(max-width:480px) {
     .container-header header .logo a{

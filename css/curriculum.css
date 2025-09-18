@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(34, 23, 27)),
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(39, 32, 49)),
     url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -17,6 +17,19 @@ body{
     margin: 0;
     padding: 0;
 }
+
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color:  #7b58da;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -37,10 +50,11 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
+
 .container-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #853131;
+    color: #5b2bdf ;
     text-decoration: none;
 }
 .container-header header ul{
@@ -55,8 +69,9 @@ html{
     transition: .5s;
     text-decoration: none;
 }
+
 .container-header header nav ul li a:hover{
-    color: #500e0e;
+    color: #451abb;
 }
 section{
     margin-top: 80px;
@@ -102,28 +117,28 @@ section{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #965c5c;
+    color: #5b2bdf ;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #965c5c;
+    color: #cbbef1;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #500e0e;
+    border-right: 2px solid #451abb;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #500e0e;
+    border-left: 2px solid #451abb;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #500e0e;
+    background-color: #451abb;
     width: 47px;
     position: absolute;
     top: 50px;
@@ -135,7 +150,7 @@ section{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #500e0e;
+    background-color: #32128a;
     margin: 0 auto;
     position: relative;
     bottom: 4px;
@@ -167,7 +182,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 60px;
-    background-color: #420d0d;
+    background-color: #451abb;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -176,5 +191,48 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+@media(max-width: 768px) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color:  #7b58da;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 300;
+    }
+    /*menu oculto*/
+    .container-header header .nav ul{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(64, 60, 75, 0.911);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(15, 5, 43, 0.911);
+        z-index: 250;
+    }
+    /*mostrar menu al activar*/
+    #menu-toggle:checked ~ .nav ul {
+        display: flex;
+    }
+    .container-header header .nav ul li {
+        margin: 5px 0;
+    }
+    .container-header header .nav ul li a{
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-align: left;
+    }
+
 }
 
