@@ -85,24 +85,24 @@ section{
     
 }
 
-.skills{
+.skill{
     color: #ffffff;
     padding: 50px 20px;
 
 }
 
-.skills .container-section{
+.skill .container-section{
     max-width: 1199px;
     margin: auto;
 }
 
-.skills h2{
+.skill h2{
     font-size: 48px;
     text-align: center;
     padding: 20px 0;
 }
 
-.skills .fila{
+.skill .fila{
     
     display: flex;
     flex-wrap: wrap;
@@ -110,26 +110,26 @@ section{
     justify-content: center;
 }
 
-.skills .fila .col{
+.skill .fila .col{
     flex: 1;
     min-width: 300px;
     padding: 0 20px;
 }
 
-.skills .fila .col h3{
+.skill .fila .col h3{
     font-size: 28px;
 
     margin-bottom: 25px;
     text-align: center;
 }
 
-.skills .skills span{
+.skill .skills span{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
 
-.skills .skills .barra-skills{
+.skill .skills .barra-skills{
     height: 8px;
     width: 80%;
     background-color: #f0f3f7;
@@ -137,7 +137,7 @@ section{
     margin-bottom: 30px;
 }
 
-.skills .skills .progreso{
+.skill .skills .progreso{
     background-color: #451abb;
     position: absolute;
     top: 0;
@@ -145,7 +145,7 @@ section{
     height: 8px;
 }
 
-.skills .skills .barra-skills span{
+.skill .skills .barra-skills span{
     position: absolute;
     height: 40px;
     width: 40px;

@@ -198,4 +198,8 @@ footer .arriba{
         text-align: left;
     }
 
+    .caja {
+        height: 200vh;
+    }
+
 }
